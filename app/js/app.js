@@ -1,7 +1,13 @@
 var addsApp = angular.module('addsAppModule', ['ngRoute'])
 .config(function($routeProvider){
     $routeProvider.when('/login', {
-        templateUrl:'',
-        controller: 'MainController'
-    })
+        templateUrl:'templates/login.html'
+    });
+    $routeProvider.when('/register', {
+        templateUrl:'templates/register.html'
+    });
+    $routeProvider.when('/ads', {
+        templateUrl:'templates/all-ads.html'
+    });
+    $routeProvider.otherwise({redirectTo: '/ads'})
 });
