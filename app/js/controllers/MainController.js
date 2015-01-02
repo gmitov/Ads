@@ -1,3 +1,5 @@
-addsApp.controller('AddsController', function($scope) {
-
+adsApp.controller('AdsController', function($scope, adsData) {
+    adsData.getAllAds(function(resp) {
+        $scope.data = resp;
+    });
 });

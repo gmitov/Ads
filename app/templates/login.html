@@ -1,29 +1,40 @@
-<div class="col-md-8">
-    <div class="well bs-component">
-        <form class="form-horizontal">
-            <fieldset>
-                <legend>User Login</legend>
-                <div class="form-group">
-                    <label for="loginUsername" class="col-lg-2 control-label">Username</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="loginUsername" placeholder="Username">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="loginPassword" class="col-lg-2 control-label">Password</label>
-                    <div class="col-lg-10">
-                        <input type="password" class="form-control" id="loginPassword" placeholder="Password">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-lg-10 col-lg-offset-2">
-                        <button class="btn btn-default">Cancel</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <a href="#/register" class="pull-right">Register here</a>
-                    </div>
+<div class="row">
+    <div class="col-md-2">
+        <div class="bs-component">
+            <h4 class="text-center">To publish a new ad, please login.</h4>
+            <div class="span2">
+                <a href="#/login" role="button" class="btn btn-default btn-block">Login</a>
+                <a href="#/register" role="button" class="btn btn-default btn-block">Register</a>
+            </div>
+        </div>
+    </div>
 
-                </div>
-            </fieldset>
-        </form>
+    <div class="col-md-8">
+        <div class="well bs-component">
+            <form class="form-horizontal">
+                <fieldset>
+                    <legend>User Login</legend>
+                    <div class="form-group">
+                        <label for="loginUsername" class="col-lg-2 control-label">Username</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="loginUsername" placeholder="Username..">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword" class="col-lg-2 control-label">Password</label>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password..">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <a href="#/ads" role="button" class="btn btn-default">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="#/register" class="pull-right">Register here</a>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
 </div>
