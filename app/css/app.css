@@ -1,4 +1,8 @@
 .ad-image-container img{
-    float:left;
-
+    width:100%;
+    height:100%;
 }
+
+/*.ad-user-information-input input{*/
+    /*width:90%*/
+/*}*/

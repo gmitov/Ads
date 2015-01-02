@@ -17,13 +17,35 @@
                     <div class="pull-right">{{ad.date| date:'dd-MMM-yyyy'}}</div>
                 </div>
                 <div class="panel-body">
-                    <div class="ad-image-container">
-                        <img ng-src="{{ad.imageDataUrl}}">
-                    </div>
-                    <div class="pull-right">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <!--{{ad.text}}-->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="ad-image-container">
+                                <img src='http://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg' ng-src="{{ad.imageDataUrl}}">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    {{ad.text}}
+                                </div>
+                                <div class="panel-body ad-user-information-input">
+                                    <div class="form-group">
+                                        <label class="col-lg-2 control-label">Name:</label>
+                                        <div class="col-lg-10">
+                                            <input disabled type="text" class="form-control" placeholder="{{ad.ownerName}}">
+                                        </div>
+
+                                            <label class="col-lg-2 control-label">Email:</label>
+                                        <div class="col-lg-10">
+                                            <input disabled type="text" class="form-control"placeholder="{{ad.ownerEmail}}">
+                                        </div>
+
+                                        <label class="col-lg-2 control-label">Phone:</label>
+                                        <div class="col-lg-10">
+                                            <input disabled type="text" class="form-control"  placeholder="{{ad.ownerPhone}}">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -33,6 +55,6 @@
     </div>
 
     <div class="col-md-2">
-
+            FIlters
     </div>
 </div>
