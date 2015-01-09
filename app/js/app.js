@@ -9,7 +9,7 @@ var adsApp = angular.module('addsAppModule', ['ngRoute'])
         controller: 'RegisterController'
     });
     $routeProvider.when('/', {
-        templateUrl:'templates/all-ads-guest.html',
+        templateUrl:'templates/show-ads.html',
         controller: 'HomeController'
     });
     $routeProvider.otherwise({redirectTo: '/'})

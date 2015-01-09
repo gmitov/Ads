@@ -11,7 +11,7 @@ adsApp.controller('RegisterController',
         $scope.register = function(userData) {
             authService.register(userData,
                 function success() {
-                    console.log(authService.getAuthHeaders());
+                    $location.path("/");
                 },
                 function error(err) {
                     //notifyService.showError("User registration failed", err);

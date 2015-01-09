@@ -14,6 +14,7 @@ adsApp.factory('authService',
                     success(data);
                 }).error(error);
             },
+
             register: function(userData, success, error) {
                 var request = {
                     method: 'POST',
@@ -26,6 +27,7 @@ adsApp.factory('authService',
                 }).error(error);
                 //console.log(userData);
             },
+
             logout: function() {
                 delete sessionStorage['currentUser'];
             },
