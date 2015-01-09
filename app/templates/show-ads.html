@@ -65,21 +65,50 @@
         </div>
     </div>
 
-    <div class="col-md-2">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Categories</h3>
+    <div id="right-panel" ng-controller="RightSidebarController">
+        <div class="col-md-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Categories</h3>
+                </div>
+                <ul>
+                    <li class="special"
+                        ng-class="{'selected': selectedCategoryId == null}"
+                        ng-click="categoryClicked(null)">
+                            <div class="panel-body">
+                                All
+                            </div>
+                    </li>
+                    <li ng-repeat="category in categoryData"
+                        ng-click="categoryClicked(category.id)"
+                        ng-class="{'selected' : selectedCategoryId == category.id}">
+                            <div class="panel-body">
+                                {{category.name}}
+                            </div>
+                    </li>
+                </ul>
             </div>
-            <div class="panel-body" ng-repeat="category in categoryData">
-                {{category.name}}
-            </div>
-        </div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="panel-title">Towns</h3>
-            </div>
-            <div class="panel-body" ng-repeat="town in townData">
-                {{town.name}}
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Towns</h3>
+                </div>
+                <ul>
+                    <li class="special"
+                        ng-class="{'selected': selectedCategoryId == null}"
+                        ng-click="categoryClicked(null)">
+                            <div class="panel-body">
+                                All
+                            </div>
+                    </li>
+                    <li ng-repeat="town in townData"
+                        ng-click="townClicked(town.id)"
+                        ng-class="{'selected' : selectedTownId == town.id}" >
+                            <div class="panel-body" >
+                                {{town.name}}
+                            </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

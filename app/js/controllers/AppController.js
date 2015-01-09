@@ -8,7 +8,6 @@ adsApp.controller('AppController',
             $scope.username = currentUser.username;
         }
 
-
         $scope.logout = function() {
             authService.logout();
             //notifyService.showInfo("Logout successful");

@@ -3,6 +3,20 @@
     height:100%;
 }
 
-/*.ad-user-information-input input{*/
-    /*width:90%*/
-/*}*/
+ul {
+    list-style-type: none;
+}
+
+#right-panel li:hover {
+    background: steelblue;
+    cursor: pointer;
+}
+
+ul.sidebar-menu li.special {
+    font-style: italic;
+}
+
+ul.sidebar-menu li.selected {
+    background: #DAA600;
+    border: 1px solid #7F6000;
+}
