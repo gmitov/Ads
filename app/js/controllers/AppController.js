@@ -1,6 +1,5 @@
 adsApp.controller('AppController',
-    function ($scope, $location, authService) {
-        // Put the authService in the $scope to make it accessible from all screens
+    function ($scope, $location, authService, notifyService) {
         $scope.authService = authService;
 
         var currentUser = authService.getCurrentUser();
@@ -10,7 +9,7 @@ adsApp.controller('AppController',
 
         $scope.logout = function() {
             authService.logout();
-            //notifyService.showInfo("Logout successful");
+            notifyService.showInfo("Logout successful");
             $location.path('/');
         };
     }
